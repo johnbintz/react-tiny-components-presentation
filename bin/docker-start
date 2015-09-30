@@ -3,4 +3,5 @@
 cd /code
 rm node_modules
 ln -sf /usr/local/node_modules node_modules
+npm install
 bash
