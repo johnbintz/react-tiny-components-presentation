@@ -1,0 +1,18 @@
+#!/bin/bash
+
+docker build -t john/nodebase -f Dockerfile.nodebase .
+
+docker build -t john/react-tiny-components-modules - <<DOCKERFILE
+FROM busybox
+RUN mkdir -p /usr/local/node_modules
+VOLUME /usr/local/node_modules
+DOCKERFILE
+
+docker rm `docker stop react-tiny-components`
+docker build -t john/react-tiny-components -f Dockerfile .
+docker run --name react-tiny-components-modules john/react-tiny-components-modules truen
+docker run -it -p 3500:3500 \
+           -v $PWD:/code \
+           --volumes-from react-tiny-components-modules \
+           --name react-tiny-components \
+           john/react-tiny-components

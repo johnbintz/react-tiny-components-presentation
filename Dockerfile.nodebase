@@ -1,0 +1,7 @@
+FROM ubuntu:15.04
+
+RUN apt-get update && apt-get -y install curl build-essential python apt-utils git vim
+RUN curl https://deb.nodesource.com/setup_4.x | bash
+RUN apt-get -y install nodejs
+RUN npm install -g babel
+CMD bash

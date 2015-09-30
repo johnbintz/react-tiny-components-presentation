@@ -1,0 +1,53 @@
+.presentation, .slide, .transitions {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+%font {
+  font-family: 'Arimo', sans-serif;
+}
+
+.slide {
+  display: table;
+}
+
+.slide-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.spacer {
+  height: 2em;
+}
+
+.large-text {
+  @extend %font;
+
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.small-text {
+  @extend %font;
+
+  font-size: 2em;
+  font-weight: 400;
+}
+
+%code {
+  text-align: left;
+}
+
+.code {
+  @extend %code;
+
+  font-size: 0.75em;
+}
+
+.code-large {
+  @extend %code;
+
+  font-size: 1.35em;
+}
