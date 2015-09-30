@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /code
+rm node_modules
+ln -sf /usr/locadocker-starml/node_modules node_modules
+bash

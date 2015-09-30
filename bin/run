@@ -10,7 +10,7 @@ DOCKERFILE
 
 docker rm `docker stop react-tiny-components`
 docker build -t john/react-tiny-components -f Dockerfile .
-docker run --name react-tiny-components-modules john/react-tiny-components-modules truen
+docker run --name react-tiny-components-modules john/react-tiny-components-modules true
 docker run -it -p 3500:3500 \
            -v $PWD:/code \
            --volumes-from react-tiny-components-modules \
