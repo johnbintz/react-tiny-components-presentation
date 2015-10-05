@@ -1,7 +1,7 @@
 import React from 'react';
 import Slide from '../slide';
 import LargeText from '../large_text';
-import SmallText from '../large_text';
+import SmallText from '../small_text';
 
 export default (
   <Slide title="Higher Order Components">

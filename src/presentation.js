@@ -3,6 +3,7 @@ import WithCSS from 'react-css-modules';
 
 import Slides from './slides';
 import SlideList from './slide_list';
+import PresentationWrapper from './presentation_wrapper';
 
 import styles from './styles.scss';
 
@@ -62,10 +63,9 @@ export default class Presentation extends React.Component {
 
   render () {
     return (
-      <div styleName='presentation'>
-        <Slides slides={SlideList}
-                {...this.state} />
-      </div>
+      <PresentationWrapper>
+        <Slides slides={SlideList} {...this.state} />
+      </PresentationWrapper>
     );
   }
 }

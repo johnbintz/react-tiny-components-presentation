@@ -22,17 +22,17 @@
   font-weight: 700; }
 
 .styles__small-text___thSOA {
-  font-size: 2em;
+  font-size: 2.75em;
   font-weight: 400; }
 
 .styles__code___1WYoK, .styles__code-large___2KxFW {
   text-align: left; }
 
 .styles__code___1WYoK {
-  font-size: 0.75em; }
+  font-size: 1em; }
 
 .styles__code-large___2KxFW {
-  font-size: 1.35em; }
+  font-size: 1.4em; }
 html, body, #app {
   width: 100%;
   height: 100%; }
@@ -40,6 +40,9 @@ html, body, #app {
 html, body {
   padding: 0;
   margin: 0; }
+
+body {
+  background: linear-gradient(10deg, #e2efff 0%, #fff 100%); }
 
 * {
   user-select: none; }

@@ -29,6 +29,7 @@ import BasicGuidelines from './slides/basic_guidelines';
 import PushDOMNodesDown from './slides/push_dom_nodes_down';
 import PushStateUp from './slides/push_state_up';
 import Thanks from './slides/thanks';
+import CSSIsGlobals from './slides/css_is_globals';
 
 export default [
   TitleSlide,
@@ -45,6 +46,7 @@ export default [
   React014ContainerBreakout,
   MoveStylesOutOfGlobalCSS,
   GlobalStyles,
+  CSSIsGlobals,
   ReactCSSModules,
   SCSSLocalStyles,
   RenderedLocalStyles,

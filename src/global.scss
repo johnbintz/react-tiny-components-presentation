@@ -8,6 +8,10 @@ html, body {
   margin: 0;
 }
 
+body {
+  background: linear-gradient(10deg, #e2efff 0%, #fff 100%);
+}
+
 * {
   user-select: none;
 }
